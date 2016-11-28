@@ -79,6 +79,7 @@
 		420058E91DBE2B4E0049B502 /* DisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420058E81DBE2B4E0049B502 /* DisplayLinkViewController.m */; };
 		420058EC1DBE32420049B502 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420058EB1DBE32420049B502 /* CALayerViewController.m */; };
 		42005A051DBEE33F0049B502 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42005A041DBEE33F0049B502 /* PopViewController.m */; };
+		423D6B3A1DEBAF49003FA75B /* UIImage+ImageRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */; };
 		426234BA1DCC34A7006C4603 /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426234B81DCC34A7006C4603 /* Case1ViewController.m */; };
 		426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426234B91DCC34A7006C4603 /* Case1ViewController.xib */; };
 		4267D3771DC0EE70004A9303 /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D3761DC0EE70004A9303 /* SpringViewController.m */; };
@@ -105,6 +106,8 @@
 		42922D9E1DC21E7E004D872B /* ProgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42922D9D1DC21E7E004D872B /* ProgViewController.m */; };
 		42922DA11DC241F9004D872B /* FadeOutInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42922DA01DC241F9004D872B /* FadeOutInViewController.m */; };
 		42922DA41DC2D44B004D872B /* CALayerMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42922DA31DC2D44B004D872B /* CALayerMaskViewController.m */; };
+		42C5A5451DEAB539009B19E5 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C5A5441DEAB539009B19E5 /* ImageViewController.m */; };
+		42C5A5471DEAC349009B19E5 /* mouse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42C5A5461DEAC349009B19E5 /* mouse.gif */; };
 		42F89BED1DCC259E00392CDE /* MasonryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F89BEC1DCC259E00392CDE /* MasonryTestViewController.m */; };
 		6928C401DB3ACC5266A57573 /* libPods-subscribeCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 434DA8DADC53AE339143F3C3 /* libPods-subscribeCenter.a */; };
 /* End PBXBuildFile section */
@@ -264,6 +267,8 @@
 		420058EB1DBE32420049B502 /* CALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerViewController.m; sourceTree = "<group>"; };
 		42005A031DBEE33F0049B502 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		42005A041DBEE33F0049B502 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		423D6B381DEBAF49003FA75B /* UIImage+ImageRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageRotate.h"; sourceTree = "<group>"; };
+		423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageRotate.m"; sourceTree = "<group>"; };
 		426234B71DCC34A7006C4603 /* Case1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
 		426234B81DCC34A7006C4603 /* Case1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
 		426234B91DCC34A7006C4603 /* Case1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Case1ViewController.xib; sourceTree = "<group>"; };
@@ -315,6 +320,9 @@
 		42922DA01DC241F9004D872B /* FadeOutInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeOutInViewController.m; sourceTree = "<group>"; };
 		42922DA21DC2D44B004D872B /* CALayerMaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerMaskViewController.h; sourceTree = "<group>"; };
 		42922DA31DC2D44B004D872B /* CALayerMaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerMaskViewController.m; sourceTree = "<group>"; };
+		42C5A5431DEAB539009B19E5 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		42C5A5441DEAB539009B19E5 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		42C5A5461DEAC349009B19E5 /* mouse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mouse.gif; sourceTree = "<group>"; };
 		42F89BEB1DCC259E00392CDE /* MasonryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryTestViewController.h; sourceTree = "<group>"; };
 		42F89BEC1DCC259E00392CDE /* MasonryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryTestViewController.m; sourceTree = "<group>"; };
 		434DA8DADC53AE339143F3C3 /* libPods-subscribeCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-subscribeCenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +369,8 @@
 		420057F31DB4CB9E0049B502 /* subscribeCenter */ = {
 			isa = PBXGroup;
 			children = (
+				42C5A5461DEAC349009B19E5 /* mouse.gif */,
+				42C5A5421DEAB514009B19E5 /* ImageViewTest */,
 				42F89BEA1DCC257B00392CDE /* Masonry */,
 				42922D951DC20959004D872B /* CALayerTest */,
 				427C39B61DC1DEA60027CB5D /* CAShaperAnim */,
@@ -733,6 +743,17 @@
 			name = CALayerTest;
 			sourceTree = "<group>";
 		};
+		42C5A5421DEAB514009B19E5 /* ImageViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				42C5A5431DEAB539009B19E5 /* ImageViewController.h */,
+				42C5A5441DEAB539009B19E5 /* ImageViewController.m */,
+				423D6B381DEBAF49003FA75B /* UIImage+ImageRotate.h */,
+				423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */,
+			);
+			name = ImageViewTest;
+			sourceTree = "<group>";
+		};
 		42F89BEA1DCC257B00392CDE /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -816,6 +837,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C5A5471DEAC349009B19E5 /* mouse.gif in Resources */,
 				426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */,
 				420058041DB4CB9E0049B502 /* LaunchScreen.storyboard in Resources */,
 				420058011DB4CB9E0049B502 /* Assets.xcassets in Resources */,
@@ -896,6 +918,7 @@
 				420058551DB75AD70049B502 /* GBAImplementor.m in Sources */,
 				4200581C1DB4FB1A0049B502 /* PrototypeViewController.m in Sources */,
 				4200583F1DB7491A0049B502 /* AndroidWatch.m in Sources */,
+				42C5A5451DEAB539009B19E5 /* ImageViewController.m in Sources */,
 				4200582A1DB746280049B502 /* FactoryManager.m in Sources */,
 				4200582D1DB747620049B502 /* BaseFactory.m in Sources */,
 				427C399F1DC1A9790027CB5D /* EmitterViewController.m in Sources */,
@@ -966,6 +989,7 @@
 				420058231DB4FEB90049B502 /* StudentTwoModel.m in Sources */,
 				4200589A1DB84E860049B502 /* MementoCenter.m in Sources */,
 				4200585E1DB75CFD0049B502 /* PSPImplementor.m in Sources */,
+				423D6B3A1DEBAF49003FA75B /* UIImage+ImageRotate.m in Sources */,
 				420058331DB747810049B502 /* BaseWatch.m in Sources */,
 				420058C21DBA51290049B502 /* LinkedList.m in Sources */,
 				420058A11DB890A50049B502 /* MementoViewController.m in Sources */,

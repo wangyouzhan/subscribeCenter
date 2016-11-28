@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "MasonryTestViewController.h"
 #import "Case1ViewController.h"
+#import "ImageViewController.h"
 
 
 
@@ -46,9 +47,15 @@
     
     
     //load Case1ViewController
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    Case1ViewController *case1ViewController = [[Case1ViewController alloc] init];
+//    [self.window setRootViewController:case1ViewController];
+//    [self.window makeKeyAndVisible];
+    
+    //图片测试
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    Case1ViewController *case1ViewController = [[Case1ViewController alloc] init];
-    [self.window setRootViewController:case1ViewController];
+    ImageViewController *imageViewController = [[ImageViewController alloc] init];
+    [self.window setRootViewController:imageViewController];
     [self.window makeKeyAndVisible];
     
     
