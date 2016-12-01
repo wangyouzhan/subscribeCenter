@@ -10,6 +10,11 @@
 #import <ImageIO/ImageIO.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "UIImage+ImageRotate.h"
+#import "UIImage+ImageCut.h"
+#import "UIImage+ImageCircle.h"
+#import "UIImage+ImageScale.h"
+#import "UIView+ImageScreenShot.h"
+#import "UIImage+ImageWaterPrint.h"
 
 @interface ImageViewController ()
 
@@ -21,24 +26,80 @@
     [super viewDidLoad];
     
     [self.view setBackgroundColor:[UIColor blueColor]];
-    
-    
-    UIImage *image = [UIImage imageNamed:@"head"];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 225, 225)];
-    imageView.image = image;
-    [self.view addSubview:imageView];
-    
-    //保存旋转的图片
-    UIImage *imageNew = [image imageRotateIndegree:45 * (3.14 / 180)];
-    UIImageWriteToSavedPhotosAlbum(imageNew, nil, nil, nil);
-    
-    
+
+
+    [self imageTestWater];
+//    [self saveScreen];
+//    [self scratchImage];
+//    [self cicleCutImage];
+//    [self cutImage];
 //    [self jpgToPng];
 //    [self jpgToJpg];
 //    [self gifImage];
     
     
     
+    
+}
+
+
+-(void)imageTestWater{
+    
+    UIImage *image = [UIImage imageNamed:@"Documents1"];
+    UIImage *logo = [UIImage imageNamed:@"head"];
+    UIImage *imageNew = [image imageWater:logo waterString:@"www.wangyouzhan.com"];
+    UIImageWriteToSavedPhotosAlbum(imageNew, nil, nil, nil);
+}
+
+
+/**
+ * 保存截屏
+ */
+-(void)saveScreen{
+    
+    UIImage *imageNew = [self.view imageScreenShot];
+    UIImageWriteToSavedPhotosAlbum(imageNew, nil, nil, nil);
+    
+}
+
+
+/**
+ *缩放图片
+ */
+-(void)scratchImage{
+    
+    UIImage *image = [UIImage imageNamed:@"head"];
+    UIImage *imageNew = [image imageScaleSize:CGSizeMake(200, 500)];
+    UIImageWriteToSavedPhotosAlbum(imageNew, nil, nil, nil);
+}
+
+
+/**
+ *剪切图片
+ */
+-(void)cicleCutImage{
+    UIImage *image = [UIImage imageNamed:@"head"];
+    UIImage *imageNew = [image imageClipCircle];
+    UIImageWriteToSavedPhotosAlbum(imageNew, nil, nil, nil);
+    
+}
+
+
+//剪切图片
+-(void)cutImage{
+    UIImage *image = [UIImage imageNamed:@"head"];
+    UIImage *imageNew = [image ImageCutSize:CGRectMake(0, 0, 100, 100)];
+    UIImageWriteToSavedPhotosAlbum(imageNew, nil, nil, nil);
+    
+}
+
+
+- (void)roateImage{
+    
+    //保存旋转的图片
+    UIImage *image = [UIImage imageNamed:@"head"];
+    UIImage *imageNew = [image imageRotateIndegree:45 * (3.14 / 180)];
+    UIImageWriteToSavedPhotosAlbum(imageNew, nil, nil, nil);
     
 }
 

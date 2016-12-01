@@ -1,14 +1,14 @@
 //
-//  ImageViewController.h
+//  UIView+ImageScreenShot.h
 //  subscribeCenter
 //
-//  Created by wangyouzhan on 2016/11/27.
+//  Created by wangyouzhan on 2016/11/28.
 //  Copyright © 2016年 lookstar. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ImageViewController : UIViewController
+@interface UIView (ImageScreenShot)
 
 -(UIImage *)imageScreenShot;
 

@@ -80,6 +80,11 @@
 		420058EC1DBE32420049B502 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420058EB1DBE32420049B502 /* CALayerViewController.m */; };
 		42005A051DBEE33F0049B502 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42005A041DBEE33F0049B502 /* PopViewController.m */; };
 		423D6B3A1DEBAF49003FA75B /* UIImage+ImageRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */; };
+		423D6B3D1DEBD410003FA75B /* UIImage+ImageCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B3C1DEBD410003FA75B /* UIImage+ImageCut.m */; };
+		423D6B401DEBD650003FA75B /* UIImage+ImageCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B3F1DEBD650003FA75B /* UIImage+ImageCircle.m */; };
+		423D6B431DEC2A12003FA75B /* UIImage+ImageScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B421DEC2A12003FA75B /* UIImage+ImageScale.m */; };
+		423D6B491DEC303C003FA75B /* UIView+ImageScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B481DEC303C003FA75B /* UIView+ImageScreenShot.m */; };
+		423D6B4C1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B4B1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m */; };
 		426234BA1DCC34A7006C4603 /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426234B81DCC34A7006C4603 /* Case1ViewController.m */; };
 		426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426234B91DCC34A7006C4603 /* Case1ViewController.xib */; };
 		4267D3771DC0EE70004A9303 /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D3761DC0EE70004A9303 /* SpringViewController.m */; };
@@ -269,6 +274,16 @@
 		42005A041DBEE33F0049B502 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		423D6B381DEBAF49003FA75B /* UIImage+ImageRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageRotate.h"; sourceTree = "<group>"; };
 		423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageRotate.m"; sourceTree = "<group>"; };
+		423D6B3B1DEBD410003FA75B /* UIImage+ImageCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageCut.h"; sourceTree = "<group>"; };
+		423D6B3C1DEBD410003FA75B /* UIImage+ImageCut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageCut.m"; sourceTree = "<group>"; };
+		423D6B3E1DEBD650003FA75B /* UIImage+ImageCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageCircle.h"; sourceTree = "<group>"; };
+		423D6B3F1DEBD650003FA75B /* UIImage+ImageCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageCircle.m"; sourceTree = "<group>"; };
+		423D6B411DEC2A12003FA75B /* UIImage+ImageScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageScale.h"; sourceTree = "<group>"; };
+		423D6B421DEC2A12003FA75B /* UIImage+ImageScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageScale.m"; sourceTree = "<group>"; };
+		423D6B471DEC303C003FA75B /* UIView+ImageScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ImageScreenShot.h"; sourceTree = "<group>"; };
+		423D6B481DEC303C003FA75B /* UIView+ImageScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ImageScreenShot.m"; sourceTree = "<group>"; };
+		423D6B4A1DEC33FB003FA75B /* UIImage+ImageWaterPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWaterPrint.h"; sourceTree = "<group>"; };
+		423D6B4B1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWaterPrint.m"; sourceTree = "<group>"; };
 		426234B71DCC34A7006C4603 /* Case1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
 		426234B81DCC34A7006C4603 /* Case1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
 		426234B91DCC34A7006C4603 /* Case1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Case1ViewController.xib; sourceTree = "<group>"; };
@@ -750,6 +765,16 @@
 				42C5A5441DEAB539009B19E5 /* ImageViewController.m */,
 				423D6B381DEBAF49003FA75B /* UIImage+ImageRotate.h */,
 				423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */,
+				423D6B3B1DEBD410003FA75B /* UIImage+ImageCut.h */,
+				423D6B3C1DEBD410003FA75B /* UIImage+ImageCut.m */,
+				423D6B3E1DEBD650003FA75B /* UIImage+ImageCircle.h */,
+				423D6B3F1DEBD650003FA75B /* UIImage+ImageCircle.m */,
+				423D6B411DEC2A12003FA75B /* UIImage+ImageScale.h */,
+				423D6B421DEC2A12003FA75B /* UIImage+ImageScale.m */,
+				423D6B471DEC303C003FA75B /* UIView+ImageScreenShot.h */,
+				423D6B481DEC303C003FA75B /* UIView+ImageScreenShot.m */,
+				423D6B4A1DEC33FB003FA75B /* UIImage+ImageWaterPrint.h */,
+				423D6B4B1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m */,
 			);
 			name = ImageViewTest;
 			sourceTree = "<group>";
@@ -918,6 +943,7 @@
 				420058551DB75AD70049B502 /* GBAImplementor.m in Sources */,
 				4200581C1DB4FB1A0049B502 /* PrototypeViewController.m in Sources */,
 				4200583F1DB7491A0049B502 /* AndroidWatch.m in Sources */,
+				423D6B431DEC2A12003FA75B /* UIImage+ImageScale.m in Sources */,
 				42C5A5451DEAB539009B19E5 /* ImageViewController.m in Sources */,
 				4200582A1DB746280049B502 /* FactoryManager.m in Sources */,
 				4200582D1DB747620049B502 /* BaseFactory.m in Sources */,
@@ -927,6 +953,7 @@
 				42922D8E1DC1F29B004D872B /* CircleViewController.m in Sources */,
 				4200580D1DB4CBC80049B502 /* SubscriptionServiceCenter.m in Sources */,
 				420058581DB75BBA0049B502 /* CommandViewController.m in Sources */,
+				423D6B401DEBD650003FA75B /* UIImage+ImageCircle.m in Sources */,
 				4200585B1DB75CD10049B502 /* PSPSytem.m in Sources */,
 				420058C91DBA588F0049B502 /* LinkedListIterator.m in Sources */,
 				420058481DB74ABA0049B502 /* FactroyPatterViewController.m in Sources */,
@@ -947,6 +974,7 @@
 				420057F91DB4CB9E0049B502 /* AppDelegate.m in Sources */,
 				420058691DB7685C0049B502 /* ModelTwo.m in Sources */,
 				420058521DB758ED0049B502 /* GBASystem.m in Sources */,
+				423D6B4C1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m in Sources */,
 				427C39B21DC1D7FB0027CB5D /* ColorUiImageView.m in Sources */,
 				420058D71DBC96A30049B502 /* LineView.m in Sources */,
 				420058D41DBC8A0E0049B502 /* AnimationViewController.m in Sources */,
@@ -977,6 +1005,7 @@
 				420058AB1DB8B68C0049B502 /* Builder.m in Sources */,
 				420058E91DBE2B4E0049B502 /* DisplayLinkViewController.m in Sources */,
 				420058701DB76A930049B502 /* AbstractExcute.m in Sources */,
+				423D6B491DEC303C003FA75B /* UIView+ImageScreenShot.m in Sources */,
 				420057F61DB4CB9E0049B502 /* main.m in Sources */,
 				420058C51DBA56010049B502 /* IterotorViewController.m in Sources */,
 				420058181DB4E66B0049B502 /* StudentModel.m in Sources */,
@@ -984,6 +1013,7 @@
 				4200588A1DB7B2120049B502 /* StoreValue.m in Sources */,
 				42922DA11DC241F9004D872B /* FadeOutInViewController.m in Sources */,
 				420058421DB7494B0049B502 /* AppleFactory.m in Sources */,
+				423D6B3D1DEBD410003FA75B /* UIImage+ImageCut.m in Sources */,
 				4200586D1DB769170049B502 /* AbstractProxy.m in Sources */,
 				4267D3771DC0EE70004A9303 /* SpringViewController.m in Sources */,
 				420058231DB4FEB90049B502 /* StudentTwoModel.m in Sources */,
