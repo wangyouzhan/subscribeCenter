@@ -13,6 +13,7 @@
 #import "Case1ViewController.h"
 #import "ImageViewController.h"
 #import "AutoresizingViewController.h"
+#import "LabelViewController.h"
 
 
 
@@ -27,9 +28,15 @@
     // Override point for customization after application launch.
     
     //手机屏幕Screen可以有多个Window，但是只能显示一个Window
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    AutoresizingViewController *windowViewController = [[AutoresizingViewController alloc] init];
+//    [self.window setRootViewController:windowViewController];
+//    [self.window makeKeyAndVisible];
+    
+    //label component show
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    AutoresizingViewController *windowViewController = [[AutoresizingViewController alloc] init];
-    [self.window setRootViewController:windowViewController];
+    LabelViewController *labelViewController = [[LabelViewController alloc] init];
+    [self.window setRootViewController:labelViewController];
     [self.window makeKeyAndVisible];
     
     

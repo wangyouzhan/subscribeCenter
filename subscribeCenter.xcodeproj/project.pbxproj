@@ -80,6 +80,7 @@
 		420058EC1DBE32420049B502 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420058EB1DBE32420049B502 /* CALayerViewController.m */; };
 		42005A051DBEE33F0049B502 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42005A041DBEE33F0049B502 /* PopViewController.m */; };
 		42132DC61DF0707800301743 /* AutoresizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42132DC51DF0707800301743 /* AutoresizingViewController.m */; };
+		42132DC91DF14B8300301743 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42132DC81DF14B8300301743 /* LabelViewController.m */; };
 		423D6B3A1DEBAF49003FA75B /* UIImage+ImageRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */; };
 		423D6B3D1DEBD410003FA75B /* UIImage+ImageCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B3C1DEBD410003FA75B /* UIImage+ImageCut.m */; };
 		423D6B401DEBD650003FA75B /* UIImage+ImageCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B3F1DEBD650003FA75B /* UIImage+ImageCircle.m */; };
@@ -275,6 +276,8 @@
 		42005A041DBEE33F0049B502 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		42132DC41DF0707800301743 /* AutoresizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoresizingViewController.h; sourceTree = "<group>"; };
 		42132DC51DF0707800301743 /* AutoresizingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoresizingViewController.m; sourceTree = "<group>"; };
+		42132DC71DF14B8300301743 /* LabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		42132DC81DF14B8300301743 /* LabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		423D6B381DEBAF49003FA75B /* UIImage+ImageRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageRotate.h"; sourceTree = "<group>"; };
 		423D6B391DEBAF49003FA75B /* UIImage+ImageRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageRotate.m"; sourceTree = "<group>"; };
 		423D6B3B1DEBD410003FA75B /* UIImage+ImageCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageCut.h"; sourceTree = "<group>"; };
@@ -780,6 +783,8 @@
 				423D6B4B1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m */,
 				42132DC41DF0707800301743 /* AutoresizingViewController.h */,
 				42132DC51DF0707800301743 /* AutoresizingViewController.m */,
+				42132DC71DF14B8300301743 /* LabelViewController.h */,
+				42132DC81DF14B8300301743 /* LabelViewController.m */,
 			);
 			name = ImageViewTest;
 			sourceTree = "<group>";
@@ -1033,6 +1038,7 @@
 				420058201DB4FD440049B502 /* BaseCopyObject.m in Sources */,
 				420058651DB762230049B502 /* CustomeViewController.m in Sources */,
 				420058301DB747760049B502 /* BasePhone.m in Sources */,
+				42132DC91DF14B8300301743 /* LabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
