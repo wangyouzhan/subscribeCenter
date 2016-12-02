@@ -12,6 +12,7 @@
 #import "MasonryTestViewController.h"
 #import "Case1ViewController.h"
 #import "ImageViewController.h"
+#import "AutoresizingViewController.h"
 
 
 
@@ -25,38 +26,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    UserInfoManagerCenter *center = [UserInfoManagerCenter managerCenter];
-    center.name = @"xiaoming";
-    [center setName:@"wang"];
-    
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    ViewController *viewController = [[ViewController alloc] init];
-//    
-//    [self.window setRootViewController:viewController];
-//    [self.window makeKeyAndVisible];
-    
-    
-    // use Masonry View controller
-    //self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    //MasonryTestViewController *viewController = [[MasonryTestViewController alloc] init];
-    
-    //[self.window setRootViewController:viewController];
-    //[self.window makeKeyAndVisible];
-    
-    
-    
-    
-    //load Case1ViewController
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    Case1ViewController *case1ViewController = [[Case1ViewController alloc] init];
-//    [self.window setRootViewController:case1ViewController];
-//    [self.window makeKeyAndVisible];
-    
-    //图片测试
+    //手机屏幕Screen可以有多个Window，但是只能显示一个Window
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ImageViewController *imageViewController = [[ImageViewController alloc] init];
-    [self.window setRootViewController:imageViewController];
+    AutoresizingViewController *windowViewController = [[AutoresizingViewController alloc] init];
+    [self.window setRootViewController:windowViewController];
     [self.window makeKeyAndVisible];
+    
     
     
 
@@ -90,6 +65,43 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+
+-(void)initTest{
+    UserInfoManagerCenter *center = [UserInfoManagerCenter managerCenter];
+    center.name = @"xiaoming";
+    [center setName:@"wang"];
+    
+    //    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //    ViewController *viewController = [[ViewController alloc] init];
+    //
+    //    [self.window setRootViewController:viewController];
+    //    [self.window makeKeyAndVisible];
+    
+    
+    // use Masonry View controller
+    //self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //MasonryTestViewController *viewController = [[MasonryTestViewController alloc] init];
+    
+    //[self.window setRootViewController:viewController];
+    //[self.window makeKeyAndVisible];
+    
+    
+    
+    
+    //load Case1ViewController
+    //    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //    Case1ViewController *case1ViewController = [[Case1ViewController alloc] init];
+    //    [self.window setRootViewController:case1ViewController];
+    //    [self.window makeKeyAndVisible];
+    
+    //图片测试
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    ImageViewController *imageViewController = [[ImageViewController alloc] init];
+    [self.window setRootViewController:imageViewController];
+    [self.window makeKeyAndVisible];
 }
 
 
