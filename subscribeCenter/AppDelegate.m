@@ -14,6 +14,7 @@
 #import "ImageViewController.h"
 #import "AutoresizingViewController.h"
 #import "LabelViewController.h"
+#import "pThreadViewController.h"
 
 
 
@@ -34,10 +35,16 @@
 //    [self.window makeKeyAndVisible];
     
     //label component show
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    LabelViewController *labelViewController = [[LabelViewController alloc] init];
+//    [self.window setRootViewController:labelViewController];
+//    [self.window makeKeyAndVisible];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    LabelViewController *labelViewController = [[LabelViewController alloc] init];
-    [self.window setRootViewController:labelViewController];
+    pThreadViewController *pthread  = [[pThreadViewController alloc] init];
+    [self.window setRootViewController:pthread];
     [self.window makeKeyAndVisible];
+    
     
     
     

@@ -91,6 +91,8 @@
 		426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426234B91DCC34A7006C4603 /* Case1ViewController.xib */; };
 		4267D3771DC0EE70004A9303 /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D3761DC0EE70004A9303 /* SpringViewController.m */; };
 		4267D37B1DC0F3B8004A9303 /* BasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D37A1DC0F3B8004A9303 /* BasicAnimationViewController.m */; };
+		426B5AB41DF80FB90068610F /* pThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AB31DF80FB90068610F /* pThreadViewController.m */; };
+		426B5AB91DF83C400068610F /* TicketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AB81DF83C400068610F /* TicketManager.m */; };
 		427C39911DC18EF10027CB5D /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 427C398D1DC18EF10027CB5D /* easing.c */; };
 		427C39921DC18EF10027CB5D /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39901DC18EF10027CB5D /* YXEasing.m */; };
 		427C39951DC190880027CB5D /* TimeClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39941DC190880027CB5D /* TimeClockViewController.m */; };
@@ -297,6 +299,10 @@
 		4267D3761DC0EE70004A9303 /* SpringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringViewController.m; sourceTree = "<group>"; };
 		4267D3791DC0F3B8004A9303 /* BasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationViewController.h; sourceTree = "<group>"; };
 		4267D37A1DC0F3B8004A9303 /* BasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationViewController.m; sourceTree = "<group>"; };
+		426B5AB21DF80FB90068610F /* pThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pThreadViewController.h; sourceTree = "<group>"; };
+		426B5AB31DF80FB90068610F /* pThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pThreadViewController.m; sourceTree = "<group>"; };
+		426B5AB71DF83C400068610F /* TicketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketManager.h; sourceTree = "<group>"; };
+		426B5AB81DF83C400068610F /* TicketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketManager.m; sourceTree = "<group>"; };
 		427C398D1DC18EF10027CB5D /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
 		427C398E1DC18EF10027CB5D /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
 		427C398F1DC18EF10027CB5D /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
@@ -390,6 +396,7 @@
 		420057F31DB4CB9E0049B502 /* subscribeCenter */ = {
 			isa = PBXGroup;
 			children = (
+				426B5AB11DF80F3A0068610F /* MultiThread */,
 				42C5A5461DEAC349009B19E5 /* mouse.gif */,
 				42C5A5421DEAB514009B19E5 /* ImageViewTest */,
 				42F89BEA1DCC257B00392CDE /* Masonry */,
@@ -702,6 +709,17 @@
 			name = EasingAnimation;
 			sourceTree = "<group>";
 		};
+		426B5AB11DF80F3A0068610F /* MultiThread */ = {
+			isa = PBXGroup;
+			children = (
+				426B5AB21DF80FB90068610F /* pThreadViewController.h */,
+				426B5AB31DF80FB90068610F /* pThreadViewController.m */,
+				426B5AB71DF83C400068610F /* TicketManager.h */,
+				426B5AB81DF83C400068610F /* TicketManager.m */,
+			);
+			name = MultiThread;
+			sourceTree = "<group>";
+		};
 		427C399C1DC1A95B0027CB5D /* EmitterAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1003,6 +1021,7 @@
 				420058A71DB89E2B0049B502 /* DemoView.m in Sources */,
 				420058CC1DBA5A020049B502 /* Wang.m in Sources */,
 				420058DA1DBCA0880049B502 /* LineViewTwo.m in Sources */,
+				426B5AB41DF80FB90068610F /* pThreadViewController.m in Sources */,
 				4200584F1DB753E50049B502 /* AbstractImplementor.m in Sources */,
 				42922DA41DC2D44B004D872B /* CALayerMaskViewController.m in Sources */,
 				420058B81DB8C8550049B502 /* Door.m in Sources */,
@@ -1013,6 +1032,7 @@
 				427C39B91DC1E0710027CB5D /* BazierViewController.m in Sources */,
 				427C39B51DC1D82B0027CB5D /* ColorViewController.m in Sources */,
 				420058AB1DB8B68C0049B502 /* Builder.m in Sources */,
+				426B5AB91DF83C400068610F /* TicketManager.m in Sources */,
 				420058E91DBE2B4E0049B502 /* DisplayLinkViewController.m in Sources */,
 				420058701DB76A930049B502 /* AbstractExcute.m in Sources */,
 				423D6B491DEC303C003FA75B /* UIView+ImageScreenShot.m in Sources */,
