@@ -93,6 +93,7 @@
 		4267D37B1DC0F3B8004A9303 /* BasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D37A1DC0F3B8004A9303 /* BasicAnimationViewController.m */; };
 		426B5AB41DF80FB90068610F /* pThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AB31DF80FB90068610F /* pThreadViewController.m */; };
 		426B5AB91DF83C400068610F /* TicketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AB81DF83C400068610F /* TicketManager.m */; };
+		426B5ABC1DF84E6B0068610F /* TestSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5ABB1DF84E6B0068610F /* TestSingle.m */; };
 		427C39911DC18EF10027CB5D /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 427C398D1DC18EF10027CB5D /* easing.c */; };
 		427C39921DC18EF10027CB5D /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39901DC18EF10027CB5D /* YXEasing.m */; };
 		427C39951DC190880027CB5D /* TimeClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39941DC190880027CB5D /* TimeClockViewController.m */; };
@@ -303,6 +304,8 @@
 		426B5AB31DF80FB90068610F /* pThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pThreadViewController.m; sourceTree = "<group>"; };
 		426B5AB71DF83C400068610F /* TicketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketManager.h; sourceTree = "<group>"; };
 		426B5AB81DF83C400068610F /* TicketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketManager.m; sourceTree = "<group>"; };
+		426B5ABA1DF84E6B0068610F /* TestSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSingle.h; sourceTree = "<group>"; };
+		426B5ABB1DF84E6B0068610F /* TestSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSingle.m; sourceTree = "<group>"; };
 		427C398D1DC18EF10027CB5D /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
 		427C398E1DC18EF10027CB5D /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
 		427C398F1DC18EF10027CB5D /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
@@ -716,6 +719,8 @@
 				426B5AB31DF80FB90068610F /* pThreadViewController.m */,
 				426B5AB71DF83C400068610F /* TicketManager.h */,
 				426B5AB81DF83C400068610F /* TicketManager.m */,
+				426B5ABA1DF84E6B0068610F /* TestSingle.h */,
+				426B5ABB1DF84E6B0068610F /* TestSingle.m */,
 			);
 			name = MultiThread;
 			sourceTree = "<group>";
@@ -1033,6 +1038,7 @@
 				427C39B51DC1D82B0027CB5D /* ColorViewController.m in Sources */,
 				420058AB1DB8B68C0049B502 /* Builder.m in Sources */,
 				426B5AB91DF83C400068610F /* TicketManager.m in Sources */,
+				426B5ABC1DF84E6B0068610F /* TestSingle.m in Sources */,
 				420058E91DBE2B4E0049B502 /* DisplayLinkViewController.m in Sources */,
 				420058701DB76A930049B502 /* AbstractExcute.m in Sources */,
 				423D6B491DEC303C003FA75B /* UIView+ImageScreenShot.m in Sources */,

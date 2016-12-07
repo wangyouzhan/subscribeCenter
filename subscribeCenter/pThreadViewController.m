@@ -9,6 +9,7 @@
 #import "pThreadViewController.h"
 #import <pthread.h>
 #import "TicketManager.h"
+#import "TestSingle.h"
 
 @interface pThreadViewController ()
 
@@ -60,8 +61,68 @@
     [btn4 addTarget:self action:@selector(gcdTest ) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn4];
     
-
+    
+    //GCD group
+    UIButton *btn5 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn5.frame = CGRectMake(100, 270, 100, 30);
+    btn5.backgroundColor = [UIColor greenColor];
+    [btn5 setTitle:@"GCD group" forState:UIControlStateNormal];
+    [btn5 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn5 addTarget:self action:@selector(gcdTestGroup ) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn5];
+    
+    //单例
+    UIButton *btn6 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn6.frame = CGRectMake(100, 310, 100, 30);
+    btn6.backgroundColor = [UIColor greenColor];
+    [btn6 setTitle:@"GCD 单例" forState:UIControlStateNormal];
+    [btn6 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn6 addTarget:self action:@selector(startSingle ) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn6];
 }
+
+- (void)startSingle{
+    
+    [TestSingle instance];
+    
+}
+
+
+- (void)gcdTestGroup{
+    
+    dispatch_queue_t queue = dispatch_queue_create("com.test.gcd.group", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"start task 1");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 1");
+        
+    });
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"start task 2");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 2");
+        
+    });
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"start task 3");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 3");
+        
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        dispatch_async(dispatch_get_main_queue() , ^{
+            NSLog(@"main.....");
+                       });
+        NSLog(@"over.....");
+    });
+    
+    
+}
+
+
 
 
 #pragma mark - GCD Test
