@@ -36,6 +36,7 @@
         [self.threadBJ setName:@"张三"];
         self.threadSH = [[NSThread alloc] initWithTarget:self selector:@selector(sale ) object:nil];
         [self.threadSH setName:@"李四"];
+        
     }
     
     

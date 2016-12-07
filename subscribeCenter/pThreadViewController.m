@@ -23,7 +23,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(100, 100, 100, 30);
+    btn.frame = CGRectMake(100, 110, 100, 30);
     btn.backgroundColor = [UIColor greenColor];
     [btn setTitle:@"pThread" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -46,20 +46,38 @@
     btn3.backgroundColor = [UIColor greenColor];
     [btn3 setTitle:@"买票" forState:UIControlStateNormal];
     [btn3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn3 addTarget:self action:@selector(saleTicket) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn3];
-
-}
-
-
-- (void)saleTicket{
+    
     TicketManager *ticketManger = [[TicketManager alloc] init];
-    [ticketManger startSale];
+    [btn3 addTarget:ticketManger action:@selector(startSale) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn3];
+    
+    //GCD
+    UIButton *btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn4.frame = CGRectMake(100, 230, 100, 30);
+    btn4.backgroundColor = [UIColor greenColor];
+    [btn4 setTitle:@"GCD" forState:UIControlStateNormal];
+    [btn4 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn4 addTarget:self action:@selector(gcdTest ) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn4];
+    
+
 }
 
 
+#pragma mark - GCD Test
+- (void)gcdTest{
 
-
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+       
+        NSLog(@"start task 1");
+        [NSThread sleepForTimeInterval:3];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"主线程....");
+            
+        });
+    });
+    
+}
 
 #pragma mark - NSThread Test
 - (void)clickPThreadTwo{
