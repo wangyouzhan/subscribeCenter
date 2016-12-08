@@ -10,8 +10,11 @@
 #import <pthread.h>
 #import "TicketManager.h"
 #import "TestSingle.h"
+#import "CustomNSOperation.h"
 
 @interface pThreadViewController ()
+
+@property(nonatomic, strong) NSOperationQueue *operQueue;
 
 
 @end
@@ -79,7 +82,60 @@
     [btn6 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn6 addTarget:self action:@selector(startSingle ) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn6];
+    
+    
+    
+    UIButton *btn7 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn7.frame = CGRectMake(100, 350, 100, 30);
+    btn7.backgroundColor = [UIColor greenColor];
+    [btn7 setTitle:@"nsoperation" forState:UIControlStateNormal];
+    [btn7 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn7 addTarget:self action:@selector(operationClick ) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn7];
+
 }
+
+#pragma mark - operationTest
+-(void)operationClick{
+    
+    NSLog(@"main thread");
+//    NSInvocationOperation *invocationOper = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(invocationAction ) object:nil];
+//    [invocationOper start];
+    
+//    NSBlockOperation *blockOper = [NSBlockOperation blockOperationWithBlock:^{
+//        NSLog(@"asy thread ....");
+//    }];
+//    [blockOper start];
+
+    
+    if (!self.operQueue) {
+        self.operQueue = [[NSOperationQueue alloc] init];
+    }
+    [self.operQueue setMaxConcurrentOperationCount:2];
+    
+    CustomNSOperation *customeOperA = [[CustomNSOperation alloc] initWithName:@"OperA"];
+    CustomNSOperation *customeOperB = [[CustomNSOperation alloc] initWithName:@"OperB"];
+    CustomNSOperation *customeOperC = [[CustomNSOperation alloc] initWithName:@"OperC"];
+    CustomNSOperation *customeOperD = [[CustomNSOperation alloc] initWithName:@"OperD"];
+    
+    //线程依赖
+    [customeOperD addDependency:customeOperA];
+    [customeOperA addDependency:customeOperC];
+    [customeOperC addDependency:customeOperB];
+    
+    [self.operQueue addOperation:customeOperA];
+    [self.operQueue addOperation:customeOperB];
+    [self.operQueue addOperation:customeOperC];
+    [self.operQueue addOperation:customeOperD];
+
+    
+}
+
+
+- (void)invocationAction{
+    NSLog(@"invocationoperation。。。");
+}
+
 
 - (void)startSingle{
     
@@ -87,6 +143,7 @@
     
 }
 
+#pragma mark - gcd Test
 
 - (void)gcdTestGroup{
     

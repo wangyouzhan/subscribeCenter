@@ -15,6 +15,7 @@
 #import "AutoresizingViewController.h"
 #import "LabelViewController.h"
 #import "pThreadViewController.h"
+#import "JsonViewController.h"
 
 
 
@@ -40,13 +41,16 @@
 //    [self.window setRootViewController:labelViewController];
 //    [self.window makeKeyAndVisible];
     
+    //test multi thread
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    pThreadViewController *pthread  = [[pThreadViewController alloc] init];
+//    [self.window setRootViewController:pthread];
+//    [self.window makeKeyAndVisible];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    pThreadViewController *pthread  = [[pThreadViewController alloc] init];
-    [self.window setRootViewController:pthread];
+    JsonViewController *jsonViewController = [[JsonViewController alloc] init];
+    [self.window setRootViewController:jsonViewController];
     [self.window makeKeyAndVisible];
-    
-    
-    
     
 
     return YES;

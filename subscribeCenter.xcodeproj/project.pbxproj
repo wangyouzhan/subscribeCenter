@@ -94,6 +94,8 @@
 		426B5AB41DF80FB90068610F /* pThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AB31DF80FB90068610F /* pThreadViewController.m */; };
 		426B5AB91DF83C400068610F /* TicketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AB81DF83C400068610F /* TicketManager.m */; };
 		426B5ABC1DF84E6B0068610F /* TestSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5ABB1DF84E6B0068610F /* TestSingle.m */; };
+		426B5ABF1DF8E99B0068610F /* CustomNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5ABE1DF8E99B0068610F /* CustomNSOperation.m */; };
+		426B5AC31DF90E040068610F /* JsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AC21DF90E040068610F /* JsonViewController.m */; };
 		427C39911DC18EF10027CB5D /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 427C398D1DC18EF10027CB5D /* easing.c */; };
 		427C39921DC18EF10027CB5D /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39901DC18EF10027CB5D /* YXEasing.m */; };
 		427C39951DC190880027CB5D /* TimeClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39941DC190880027CB5D /* TimeClockViewController.m */; };
@@ -306,6 +308,10 @@
 		426B5AB81DF83C400068610F /* TicketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketManager.m; sourceTree = "<group>"; };
 		426B5ABA1DF84E6B0068610F /* TestSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSingle.h; sourceTree = "<group>"; };
 		426B5ABB1DF84E6B0068610F /* TestSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSingle.m; sourceTree = "<group>"; };
+		426B5ABD1DF8E99B0068610F /* CustomNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNSOperation.h; sourceTree = "<group>"; };
+		426B5ABE1DF8E99B0068610F /* CustomNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNSOperation.m; sourceTree = "<group>"; };
+		426B5AC11DF90E040068610F /* JsonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonViewController.h; sourceTree = "<group>"; };
+		426B5AC21DF90E040068610F /* JsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonViewController.m; sourceTree = "<group>"; };
 		427C398D1DC18EF10027CB5D /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
 		427C398E1DC18EF10027CB5D /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
 		427C398F1DC18EF10027CB5D /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
@@ -399,6 +405,7 @@
 		420057F31DB4CB9E0049B502 /* subscribeCenter */ = {
 			isa = PBXGroup;
 			children = (
+				426B5AC01DF90DEA0068610F /* JsonTest */,
 				426B5AB11DF80F3A0068610F /* MultiThread */,
 				42C5A5461DEAC349009B19E5 /* mouse.gif */,
 				42C5A5421DEAB514009B19E5 /* ImageViewTest */,
@@ -721,8 +728,19 @@
 				426B5AB81DF83C400068610F /* TicketManager.m */,
 				426B5ABA1DF84E6B0068610F /* TestSingle.h */,
 				426B5ABB1DF84E6B0068610F /* TestSingle.m */,
+				426B5ABD1DF8E99B0068610F /* CustomNSOperation.h */,
+				426B5ABE1DF8E99B0068610F /* CustomNSOperation.m */,
 			);
 			name = MultiThread;
+			sourceTree = "<group>";
+		};
+		426B5AC01DF90DEA0068610F /* JsonTest */ = {
+			isa = PBXGroup;
+			children = (
+				426B5AC11DF90E040068610F /* JsonViewController.h */,
+				426B5AC21DF90E040068610F /* JsonViewController.m */,
+			);
+			name = JsonTest;
 			sourceTree = "<group>";
 		};
 		427C399C1DC1A95B0027CB5D /* EmitterAnimation */ = {
@@ -1033,6 +1051,7 @@
 				420058E51DBDC67D0049B502 /* FadeString.m in Sources */,
 				4200588D1DB7BF9F0049B502 /* FastCoder.m in Sources */,
 				420058961DB84B130049B502 /* NSObject+StoreValue.m in Sources */,
+				426B5AC31DF90E040068610F /* JsonViewController.m in Sources */,
 				427C39A51DC1B4390027CB5D /* CAEmitterLayerView.m in Sources */,
 				427C39B91DC1E0710027CB5D /* BazierViewController.m in Sources */,
 				427C39B51DC1D82B0027CB5D /* ColorViewController.m in Sources */,
@@ -1065,6 +1084,7 @@
 				420058651DB762230049B502 /* CustomeViewController.m in Sources */,
 				420058301DB747760049B502 /* BasePhone.m in Sources */,
 				42132DC91DF14B8300301743 /* LabelViewController.m in Sources */,
+				426B5ABF1DF8E99B0068610F /* CustomNSOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
