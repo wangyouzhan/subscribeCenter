@@ -96,6 +96,7 @@
 		426B5ABC1DF84E6B0068610F /* TestSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5ABB1DF84E6B0068610F /* TestSingle.m */; };
 		426B5ABF1DF8E99B0068610F /* CustomNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5ABE1DF8E99B0068610F /* CustomNSOperation.m */; };
 		426B5AC31DF90E040068610F /* JsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426B5AC21DF90E040068610F /* JsonViewController.m */; };
+		426B5AC51DF980FA0068610F /* json in Resources */ = {isa = PBXBuildFile; fileRef = 426B5AC41DF980F90068610F /* json */; };
 		427C39911DC18EF10027CB5D /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 427C398D1DC18EF10027CB5D /* easing.c */; };
 		427C39921DC18EF10027CB5D /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39901DC18EF10027CB5D /* YXEasing.m */; };
 		427C39951DC190880027CB5D /* TimeClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C39941DC190880027CB5D /* TimeClockViewController.m */; };
@@ -312,6 +313,7 @@
 		426B5ABE1DF8E99B0068610F /* CustomNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNSOperation.m; sourceTree = "<group>"; };
 		426B5AC11DF90E040068610F /* JsonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonViewController.h; sourceTree = "<group>"; };
 		426B5AC21DF90E040068610F /* JsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonViewController.m; sourceTree = "<group>"; };
+		426B5AC41DF980F90068610F /* json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json; sourceTree = "<group>"; };
 		427C398D1DC18EF10027CB5D /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
 		427C398E1DC18EF10027CB5D /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
 		427C398F1DC18EF10027CB5D /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
@@ -739,6 +741,7 @@
 			children = (
 				426B5AC11DF90E040068610F /* JsonViewController.h */,
 				426B5AC21DF90E040068610F /* JsonViewController.m */,
+				426B5AC41DF980F90068610F /* json */,
 			);
 			name = JsonTest;
 			sourceTree = "<group>";
@@ -917,6 +920,7 @@
 				426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */,
 				420058041DB4CB9E0049B502 /* LaunchScreen.storyboard in Resources */,
 				420058011DB4CB9E0049B502 /* Assets.xcassets in Resources */,
+				426B5AC51DF980FA0068610F /* json in Resources */,
 				420057FF1DB4CB9E0049B502 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
