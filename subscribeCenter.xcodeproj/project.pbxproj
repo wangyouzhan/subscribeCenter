@@ -87,6 +87,8 @@
 		423D6B431DEC2A12003FA75B /* UIImage+ImageScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B421DEC2A12003FA75B /* UIImage+ImageScale.m */; };
 		423D6B491DEC303C003FA75B /* UIView+ImageScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B481DEC303C003FA75B /* UIView+ImageScreenShot.m */; };
 		423D6B4C1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D6B4B1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m */; };
+		42512B161DFBF6970071B59D /* NetHttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B151DFBF6970071B59D /* NetHttpViewController.m */; };
+		42512B191DFBFC1C0071B59D /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B181DFBFC1C0071B59D /* LocationViewController.m */; };
 		426234BA1DCC34A7006C4603 /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426234B81DCC34A7006C4603 /* Case1ViewController.m */; };
 		426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426234B91DCC34A7006C4603 /* Case1ViewController.xib */; };
 		4267D3771DC0EE70004A9303 /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D3761DC0EE70004A9303 /* SpringViewController.m */; };
@@ -296,6 +298,10 @@
 		423D6B481DEC303C003FA75B /* UIView+ImageScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ImageScreenShot.m"; sourceTree = "<group>"; };
 		423D6B4A1DEC33FB003FA75B /* UIImage+ImageWaterPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWaterPrint.h"; sourceTree = "<group>"; };
 		423D6B4B1DEC33FB003FA75B /* UIImage+ImageWaterPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWaterPrint.m"; sourceTree = "<group>"; };
+		42512B141DFBF6970071B59D /* NetHttpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetHttpViewController.h; sourceTree = "<group>"; };
+		42512B151DFBF6970071B59D /* NetHttpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetHttpViewController.m; sourceTree = "<group>"; };
+		42512B171DFBFC1C0071B59D /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		42512B181DFBFC1C0071B59D /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		426234B71DCC34A7006C4603 /* Case1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
 		426234B81DCC34A7006C4603 /* Case1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
 		426234B91DCC34A7006C4603 /* Case1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Case1ViewController.xib; sourceTree = "<group>"; };
@@ -742,6 +748,10 @@
 				426B5AC11DF90E040068610F /* JsonViewController.h */,
 				426B5AC21DF90E040068610F /* JsonViewController.m */,
 				426B5AC41DF980F90068610F /* json */,
+				42512B141DFBF6970071B59D /* NetHttpViewController.h */,
+				42512B151DFBF6970071B59D /* NetHttpViewController.m */,
+				42512B171DFBFC1C0071B59D /* LocationViewController.h */,
+				42512B181DFBFC1C0071B59D /* LocationViewController.m */,
 			);
 			name = JsonTest;
 			sourceTree = "<group>";
@@ -890,6 +900,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = U8KLAE83M8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -1002,12 +1017,14 @@
 				42C5A5451DEAB539009B19E5 /* ImageViewController.m in Sources */,
 				4200582A1DB746280049B502 /* FactoryManager.m in Sources */,
 				4200582D1DB747620049B502 /* BaseFactory.m in Sources */,
+				42512B191DFBFC1C0071B59D /* LocationViewController.m in Sources */,
 				427C399F1DC1A9790027CB5D /* EmitterViewController.m in Sources */,
 				427C39A21DC1B3A70027CB5D /* CustermEmitterViewController.m in Sources */,
 				4267D37B1DC0F3B8004A9303 /* BasicAnimationViewController.m in Sources */,
 				42922D8E1DC1F29B004D872B /* CircleViewController.m in Sources */,
 				4200580D1DB4CBC80049B502 /* SubscriptionServiceCenter.m in Sources */,
 				420058581DB75BBA0049B502 /* CommandViewController.m in Sources */,
+				42512B161DFBF6970071B59D /* NetHttpViewController.m in Sources */,
 				423D6B401DEBD650003FA75B /* UIImage+ImageCircle.m in Sources */,
 				4200585B1DB75CD10049B502 /* PSPSytem.m in Sources */,
 				420058C91DBA588F0049B502 /* LinkedListIterator.m in Sources */,

@@ -16,6 +16,8 @@
 #import "LabelViewController.h"
 #import "pThreadViewController.h"
 #import "JsonViewController.h"
+#import "NetHttpViewController.h"
+#import "LocationViewController.h"
 
 
 
@@ -47,9 +49,21 @@
 //    [self.window setRootViewController:pthread];
 //    [self.window makeKeyAndVisible];
     
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    JsonViewController *jsonViewController = [[JsonViewController alloc] init];
+//    [self.window setRootViewController:jsonViewController];
+//    [self.window makeKeyAndVisible];
+    
+    //http network request
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    NetHttpViewController *netViewController = [[NetHttpViewController alloc] init];
+//    [self.window setRootViewController:netViewController];
+//    [self.window makeKeyAndVisible];
+    
+    //core LocationManager
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    JsonViewController *jsonViewController = [[JsonViewController alloc] init];
-    [self.window setRootViewController:jsonViewController];
+    LocationViewController *locationViewController = [[LocationViewController alloc] init];
+    [self.window setRootViewController:locationViewController];
     [self.window makeKeyAndVisible];
     
 
@@ -120,6 +134,9 @@
     ImageViewController *imageViewController = [[ImageViewController alloc] init];
     [self.window setRootViewController:imageViewController];
     [self.window makeKeyAndVisible];
+    
+    
+    
 }
 
 
