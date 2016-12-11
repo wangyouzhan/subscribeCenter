@@ -22,6 +22,7 @@
 #import "UserInfoViewController.h"
 #import "WebViewViewController.h"
 #import "StackViewController.h"
+#import "ContectTableViewController.h"
 
 
 
@@ -71,8 +72,9 @@
     
 //    UserInfoViewController *userInfoViewController = [[UserInfoViewController alloc] init];
 //    WebViewViewController *webViewController = [[WebViewViewController alloc] init];
-    StackViewController *stackViewController = [[StackViewController alloc] init];
-    [self.window setRootViewController:stackViewController];
+//    StackViewController *stackViewController = [[StackViewController alloc] init];
+    ContectTableViewController *viewcontroller = [[ContectTableViewController alloc] init];
+    [self.window setRootViewController:viewcontroller];
     [self.window makeKeyAndVisible];
     
 
