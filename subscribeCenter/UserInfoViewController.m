@@ -120,6 +120,10 @@
 //        NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         
 //        NSLog(@"%@", result);
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        NSInteger status = [httpResponse statusCode];
+        
+        
         
         id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
     
