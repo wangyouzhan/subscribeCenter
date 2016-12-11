@@ -18,6 +18,8 @@
 #import "JsonViewController.h"
 #import "NetHttpViewController.h"
 #import "LocationViewController.h"
+#import "JSBindingViewController.h"
+#import "UserInfoViewController.h"
 
 
 
@@ -62,8 +64,11 @@
     
     //core LocationManager
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    LocationViewController *locationViewController = [[LocationViewController alloc] init];
-    [self.window setRootViewController:locationViewController];
+//    LocationViewController *locationViewController = [[LocationViewController alloc] init];
+//    JSBindingViewController *jsBindingViewController = [[JSBindingViewController alloc] init];
+    
+    UserInfoViewController *userInfoViewController = [[UserInfoViewController alloc] init];
+    [self.window setRootViewController:userInfoViewController];
     [self.window makeKeyAndVisible];
     
 
@@ -131,7 +136,7 @@
     
     //图片测试
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ImageViewController *imageViewController = [[ImageViewController alloc] init];
+    UserInfoViewController *imageViewController = [[UserInfoViewController alloc] init];
     [self.window setRootViewController:imageViewController];
     [self.window makeKeyAndVisible];
     
