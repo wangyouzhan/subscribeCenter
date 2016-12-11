@@ -20,6 +20,7 @@
 #import "LocationViewController.h"
 #import "JSBindingViewController.h"
 #import "UserInfoViewController.h"
+#import "WebViewViewController.h"
 
 
 
@@ -67,8 +68,9 @@
 //    LocationViewController *locationViewController = [[LocationViewController alloc] init];
 //    JSBindingViewController *jsBindingViewController = [[JSBindingViewController alloc] init];
     
-    UserInfoViewController *userInfoViewController = [[UserInfoViewController alloc] init];
-    [self.window setRootViewController:userInfoViewController];
+//    UserInfoViewController *userInfoViewController = [[UserInfoViewController alloc] init];
+    WebViewViewController *webViewController = [[WebViewViewController alloc] init];
+    [self.window setRootViewController:webViewController];
     [self.window makeKeyAndVisible];
     
 
@@ -137,6 +139,7 @@
     //图片测试
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UserInfoViewController *imageViewController = [[UserInfoViewController alloc] init];
+    
     [self.window setRootViewController:imageViewController];
     [self.window makeKeyAndVisible];
     

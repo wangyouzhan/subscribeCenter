@@ -92,6 +92,7 @@
 		42512B1C1DFC06540071B59D /* JSBindingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B1B1DFC06540071B59D /* JSBindingViewController.m */; };
 		42512B1F1DFC32F60071B59D /* KeyValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B1E1DFC32F60071B59D /* KeyValueView.m */; };
 		42512B221DFC35360071B59D /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B211DFC35360071B59D /* UserInfoViewController.m */; };
+		42512B251DFD566E0071B59D /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B241DFD566E0071B59D /* WebViewViewController.m */; };
 		426234BA1DCC34A7006C4603 /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426234B81DCC34A7006C4603 /* Case1ViewController.m */; };
 		426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426234B91DCC34A7006C4603 /* Case1ViewController.xib */; };
 		4267D3771DC0EE70004A9303 /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D3761DC0EE70004A9303 /* SpringViewController.m */; };
@@ -311,6 +312,8 @@
 		42512B1E1DFC32F60071B59D /* KeyValueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueView.m; sourceTree = "<group>"; };
 		42512B201DFC35360071B59D /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		42512B211DFC35360071B59D /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		42512B231DFD566E0071B59D /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewController.h; sourceTree = "<group>"; };
+		42512B241DFD566E0071B59D /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewController.m; sourceTree = "<group>"; };
 		426234B71DCC34A7006C4603 /* Case1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
 		426234B81DCC34A7006C4603 /* Case1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
 		426234B91DCC34A7006C4603 /* Case1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Case1ViewController.xib; sourceTree = "<group>"; };
@@ -767,6 +770,8 @@
 				42512B1E1DFC32F60071B59D /* KeyValueView.m */,
 				42512B201DFC35360071B59D /* UserInfoViewController.h */,
 				42512B211DFC35360071B59D /* UserInfoViewController.m */,
+				42512B231DFD566E0071B59D /* WebViewViewController.h */,
+				42512B241DFD566E0071B59D /* WebViewViewController.m */,
 			);
 			name = JsonTest;
 			sourceTree = "<group>";
@@ -1022,6 +1027,7 @@
 				42922D941DC1F71F004D872B /* GradientCircleViewController.m in Sources */,
 				420057FC1DB4CB9E0049B502 /* ViewController.m in Sources */,
 				420058B51DB8BCCC0049B502 /* Engine.m in Sources */,
+				42512B251DFD566E0071B59D /* WebViewViewController.m in Sources */,
 				42922D9B1DC21C52004D872B /* ProgressView.m in Sources */,
 				4200584C1DB753C60049B502 /* AbstractSystem.m in Sources */,
 				420058E21DBDB6B20049B502 /* MaskViewViewController.m in Sources */,
