@@ -93,6 +93,8 @@
 		42512B1F1DFC32F60071B59D /* KeyValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B1E1DFC32F60071B59D /* KeyValueView.m */; };
 		42512B221DFC35360071B59D /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B211DFC35360071B59D /* UserInfoViewController.m */; };
 		42512B251DFD566E0071B59D /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B241DFD566E0071B59D /* WebViewViewController.m */; };
+		42512B2C1DFD625C0071B59D /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42512B2A1DFD625C0071B59D /* StackViewController.m */; };
+		42512B2D1DFD625C0071B59D /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42512B2B1DFD625C0071B59D /* StackViewController.xib */; };
 		426234BA1DCC34A7006C4603 /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426234B81DCC34A7006C4603 /* Case1ViewController.m */; };
 		426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426234B91DCC34A7006C4603 /* Case1ViewController.xib */; };
 		4267D3771DC0EE70004A9303 /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267D3761DC0EE70004A9303 /* SpringViewController.m */; };
@@ -314,6 +316,9 @@
 		42512B211DFC35360071B59D /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		42512B231DFD566E0071B59D /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewController.h; sourceTree = "<group>"; };
 		42512B241DFD566E0071B59D /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewController.m; sourceTree = "<group>"; };
+		42512B291DFD625C0071B59D /* StackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
+		42512B2A1DFD625C0071B59D /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
+		42512B2B1DFD625C0071B59D /* StackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackViewController.xib; sourceTree = "<group>"; };
 		426234B71DCC34A7006C4603 /* Case1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
 		426234B81DCC34A7006C4603 /* Case1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
 		426234B91DCC34A7006C4603 /* Case1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Case1ViewController.xib; sourceTree = "<group>"; };
@@ -459,13 +464,6 @@
 				420058021DB4CB9E0049B502 /* LaunchScreen.storyboard */,
 				420058051DB4CB9E0049B502 /* Info.plist */,
 				420057F41DB4CB9E0049B502 /* Supporting Files */,
-				4200580B1DB4CBC80049B502 /* SubscriptionServiceCenter.h */,
-				4200580C1DB4CBC80049B502 /* SubscriptionServiceCenter.m */,
-				4200580E1DB4CEE70049B502 /* SubcriptionServiceCenterProtocal.h */,
-				4200580F1DB4D7330049B502 /* KVOExampleViewController.h */,
-				420058101DB4D7330049B502 /* KVOExampleViewController.m */,
-				420058121DB4DA3E0049B502 /* Model.h */,
-				420058131DB4DA3E0049B502 /* Model.m */,
 			);
 			path = subscribeCenter;
 			sourceTree = "<group>";
@@ -481,6 +479,13 @@
 		420058151DB4E6420049B502 /* PrototypeAndFacade */ = {
 			isa = PBXGroup;
 			children = (
+				4200580B1DB4CBC80049B502 /* SubscriptionServiceCenter.h */,
+				4200580C1DB4CBC80049B502 /* SubscriptionServiceCenter.m */,
+				4200580E1DB4CEE70049B502 /* SubcriptionServiceCenterProtocal.h */,
+				4200580F1DB4D7330049B502 /* KVOExampleViewController.h */,
+				420058101DB4D7330049B502 /* KVOExampleViewController.m */,
+				420058121DB4DA3E0049B502 /* Model.h */,
+				420058131DB4DA3E0049B502 /* Model.m */,
 				420058161DB4E66B0049B502 /* StudentModel.h */,
 				420058171DB4E66B0049B502 /* StudentModel.m */,
 				420058191DB4E6F60049B502 /* PrototypeCopyProtocal.h */,
@@ -871,6 +876,9 @@
 				426234B71DCC34A7006C4603 /* Case1ViewController.h */,
 				426234B81DCC34A7006C4603 /* Case1ViewController.m */,
 				426234B91DCC34A7006C4603 /* Case1ViewController.xib */,
+				42512B291DFD625C0071B59D /* StackViewController.h */,
+				42512B2A1DFD625C0071B59D /* StackViewController.m */,
+				42512B2B1DFD625C0071B59D /* StackViewController.xib */,
 			);
 			name = Masonry;
 			sourceTree = "<group>";
@@ -955,6 +963,7 @@
 				426234BB1DCC34A7006C4603 /* Case1ViewController.xib in Resources */,
 				420058041DB4CB9E0049B502 /* LaunchScreen.storyboard in Resources */,
 				420058011DB4CB9E0049B502 /* Assets.xcassets in Resources */,
+				42512B2D1DFD625C0071B59D /* StackViewController.xib in Resources */,
 				426B5AC51DF980FA0068610F /* json in Resources */,
 				420057FF1DB4CB9E0049B502 /* Main.storyboard in Resources */,
 			);
@@ -1084,6 +1093,7 @@
 				4200583C1DB748F60049B502 /* iWatch.m in Sources */,
 				420058A41DB897FD0049B502 /* NSObject+MementoCenter.m in Sources */,
 				420058DE1DBCBCE00049B502 /* ImageEffectViewController.m in Sources */,
+				42512B2C1DFD625C0071B59D /* StackViewController.m in Sources */,
 				42F89BED1DCC259E00392CDE /* MasonryTestViewController.m in Sources */,
 				42005A051DBEE33F0049B502 /* PopViewController.m in Sources */,
 				420058A71DB89E2B0049B502 /* DemoView.m in Sources */,

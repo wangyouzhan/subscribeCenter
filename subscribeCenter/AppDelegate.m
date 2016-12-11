@@ -21,6 +21,7 @@
 #import "JSBindingViewController.h"
 #import "UserInfoViewController.h"
 #import "WebViewViewController.h"
+#import "StackViewController.h"
 
 
 
@@ -69,8 +70,9 @@
 //    JSBindingViewController *jsBindingViewController = [[JSBindingViewController alloc] init];
     
 //    UserInfoViewController *userInfoViewController = [[UserInfoViewController alloc] init];
-    WebViewViewController *webViewController = [[WebViewViewController alloc] init];
-    [self.window setRootViewController:webViewController];
+//    WebViewViewController *webViewController = [[WebViewViewController alloc] init];
+    StackViewController *stackViewController = [[StackViewController alloc] init];
+    [self.window setRootViewController:stackViewController];
     [self.window makeKeyAndVisible];
     
 
