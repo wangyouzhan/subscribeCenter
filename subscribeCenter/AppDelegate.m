@@ -68,13 +68,13 @@
     //core LocationManager
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    LocationViewController *locationViewController = [[LocationViewController alloc] init];
-//    JSBindingViewController *jsBindingViewController = [[JSBindingViewController alloc] init];
+    JSBindingViewController *jsBindingViewController = [[JSBindingViewController alloc] init];
     
 //    UserInfoViewController *userInfoViewController = [[UserInfoViewController alloc] init];
 //    WebViewViewController *webViewController = [[WebViewViewController alloc] init];
 //    StackViewController *stackViewController = [[StackViewController alloc] init];
-    ContectTableViewController *viewcontroller = [[ContectTableViewController alloc] init];
-    [self.window setRootViewController:viewcontroller];
+//    ContectTableViewController *viewcontroller = [[ContectTableViewController alloc] init];
+    [self.window setRootViewController:jsBindingViewController];
     [self.window makeKeyAndVisible];
     
 

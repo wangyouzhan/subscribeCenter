@@ -27,7 +27,16 @@
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];
+    
+    
+    
+    
+    
+    
 }
+
+
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     

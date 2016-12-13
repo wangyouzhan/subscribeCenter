@@ -44,6 +44,26 @@
     
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"ddd" message:@"women" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleDefault handler:nil ];
+    
+    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleDefault handler:nil ];
+    UIAlertAction *action3 = [UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleCancel handler:nil ];
+
+    
+    [ac addAction:action1];
+    [ac addAction:action2];
+    [ac addAction:action3];
+    
+    
+    
+    [self presentViewController:ac animated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
