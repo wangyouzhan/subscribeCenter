@@ -23,6 +23,7 @@
 #import "WebViewViewController.h"
 #import "StackViewController.h"
 #import "ContectTableViewController.h"
+#import "FBKViewController.h"
 
 
 
@@ -74,7 +75,8 @@
 //    WebViewViewController *webViewController = [[WebViewViewController alloc] init];
 //    StackViewController *stackViewController = [[StackViewController alloc] init];
 //    ContectTableViewController *viewcontroller = [[ContectTableViewController alloc] init];
-    [self.window setRootViewController:jsBindingViewController];
+    FBKViewController* fbkViewController = [[FBKViewController alloc] init];
+    [self.window setRootViewController:fbkViewController];
     [self.window makeKeyAndVisible];
     
 
