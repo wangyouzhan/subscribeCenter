@@ -1,8 +1,10 @@
 PODS:
+  - KVOController (1.2.0)
   - Masonry (1.0.2)
   - pop (1.0.9)
 
 DEPENDENCIES:
+  - KVOController
   - Masonry
   - pop (from `https://github.com/facebook/pop.git`)
 
@@ -16,9 +18,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/facebook/pop.git
 
 SPEC CHECKSUMS:
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-PODFILE CHECKSUM: 9a567d20ccd4cde5ab182d529382f4a4b3da5d40
+PODFILE CHECKSUM: bde47dc0dbd472d57905a336cb9081e171add753
 
 COCOAPODS: 1.1.1

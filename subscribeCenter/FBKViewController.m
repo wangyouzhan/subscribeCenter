@@ -11,6 +11,7 @@
 #import "Person.h"
 #import "MVCViewController.h"
 #import "MVPViewController.h"
+#import "MVVMViewController.h"
 
 @interface FBKViewController ()
 {
@@ -76,11 +77,19 @@
     
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self showMVP];
+        [self showMVVM];
     });
     
     
     
+    
+}
+
+- (void)showMVVM{
+    
+    
+    MVVMViewController *mvpViewController = [[MVVMViewController alloc] init];
+    [self presentViewController:mvpViewController animated:YES completion:nil];
     
 }
 

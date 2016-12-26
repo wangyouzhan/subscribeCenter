@@ -2,6 +2,7 @@ platform :ios, '9.0'
 target 'subscribeCenter' do
 pod 'pop', :git => 'https://github.com/facebook/pop.git'
 pod 'Masonry'
+pod 'KVOController'
 
 end
 
